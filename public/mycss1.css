@@ -1,0 +1,26 @@
+body {
+    background-color: gold;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+p {
+    color: darkgreen;
+}
+h2 {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+a:link, a:visited {
+    text-decoration: none;
+    color: aquamarine;
+}
+a:hover {
+    text-decoration: none;
+    color: rgb(252, 155, 199);
+    font-weight: bold;
+}
+.formatheader {
+    font-size: larger;
+}
