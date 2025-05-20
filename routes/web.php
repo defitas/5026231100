@@ -33,3 +33,31 @@ Route::get('hello', [Link::class, 'helloword']);
 Route::get('pertama', function () {
 	return view('pertama');
 });
+
+Route::get('bootstrap1', function () {
+	return view('bootstrap1');
+});
+
+Route::get('js1', function () {
+	return view('js1');
+});
+
+Route::get('js2', function () {
+	return view('js2');
+});
+
+Route::get('latihanlayout', function () {
+	return view('latihanlayout');
+});
+
+Route::get('linktree', function () {
+	return view('linktree');
+});
+
+Route::get('tes', function () {
+	return view('tes');
+});
+
+Route::get('index', function () {
+	return view('index');
+});

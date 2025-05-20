@@ -22,6 +22,24 @@
     </head>
     <body class="antialiased">
         <h1>Selamat Datang</h1>
+        <h2>Routing file:</h2>
+        <ul>
+            <h3>Pertemuan 3</h3>
+            <li><a href="{{ url('/bootstrap1') }}">Bootstrap 1</a></li>
+            <li><a href="{{ url('/pertama') }}">Pertama</a></li>
+            <li><a href="{{ url('/tes') }}">Tes</a></li>
+            <h3>Pertemuan 4</h3>
+            <li><a href="{{ url('/latihanlayout') }}">Latihan Layout</a></li>
+            <h3>Tugas Linktree</h3>
+            <li><a href="{{ url('/linktree') }}">Linktree</a></li>
+            <h3>Pertemuan 7</h3>
+            <li><a href="{{ url('/js1') }}">Javascript 1</a></li>
+            <li><a href="{{ url('/js2') }}">Javascript 2</a></li>
+            <h3>ETS</h3>
+            <li><a href="{{ url('/index') }}">ETS</a></li>
+            <h3>Pertemuan 11 (routing)</h3>
+            <li><a href="{{ url('/blog') }}">Blog</a></li>
+        </ul>
         <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
             @if (Route::has('login'))
                 <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
