@@ -7,6 +7,7 @@ use App\Http\Controllers\PegawaiController;
 use App\Http\Controllers\Pegawai2Controller;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\SnackController;
+use App\Http\Controllers\KbController;
 
 /*
 |--------------------------------------------------------------------------
@@ -94,3 +95,10 @@ Route::get('/snack/edit/{id}', [SnackController::class, 'edit']);
 Route::post('/snack/update', [SnackController::class, 'update']);
 Route::get('/snack/hapus/{id}', [SnackController::class, 'hapus']);
 Route::get('/snack/cari', [SnackController::class, 'cari']);
+
+// CRUD latihan 1
+Route::get('/kb', [KbController::class, 'index']);
+Route::get('/kb/tambah', [KbController::class, 'tambah']);
+Route::post('/kb/store', [KbController::class, 'store']);
+Route::get('/kb/hapus/{id}', [KbController::class, 'hapus']);
+Route::get('/kb/cari', [KbController::class, 'cari']);

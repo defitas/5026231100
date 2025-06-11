@@ -11,9 +11,9 @@
                     alert("Hello");
                 }
                 function tambah(){
-                    var bilangan1 = document.getElementById("bil1").value; 
+                    var bilangan1 = document.getElementById("bil1").value;
                     var bilangan2 = document.getElementById("bil2").value;
-                    var hasil = Number.parseInt(bilangan1) + Number.parseInt(bilangan2); 
+                    var hasil = Number.parseInt(bilangan1) + Number.parseInt(bilangan2);
                     document.getElementById("hasil").innerHTML = hasil;
                 }
         </script>
