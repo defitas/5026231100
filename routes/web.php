@@ -6,6 +6,7 @@ use App\Http\Controllers\Link;
 use App\Http\Controllers\PegawaiController;
 use App\Http\Controllers\Pegawai2Controller;
 use App\Http\Controllers\BlogController;
+use App\Http\Controllers\SnackController;
 
 /*
 |--------------------------------------------------------------------------
@@ -84,3 +85,12 @@ Route::get('/pegawai/edit/{id}', [PegawaiController::class, 'edit']);
 Route::post('/pegawai/update', [PegawaiController::class, 'update']);
 Route::get('/pegawai/hapus/{id}', [PegawaiController::class, 'hapus']);
 Route::get('/pegawai/cari', [PegawaiController::class, 'cari']);
+
+// CRUD snack (tugas CRUD)
+Route::get('/snack', [SnackController::class, 'index']);
+Route::get('/snack/tambah', [SnackController::class, 'tambah']);
+Route::post('/snack/store', [SnackController::class, 'store']);
+Route::get('/snack/edit/{id}', [SnackController::class, 'edit']);
+Route::post('/snack/update', [SnackController::class, 'update']);
+Route::get('/snack/hapus/{id}', [SnackController::class, 'hapus']);
+Route::get('/snack/cari', [SnackController::class, 'cari']);
