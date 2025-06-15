@@ -5,11 +5,6 @@
 
 	<a href="/kb/tambah" class="btn btn-primary">Beli</a>
 
-	<p>Cari Kode Barang :</p>
-<form action="/kb/cari" method="GET">
-	<input type="text" class="form-control" name="cari" placeholder="Cari Kode Barang ..">
-	<input type="submit" value="CARI" class="btn btn-info">
-</form>
 	<br/>
 
 	<table class="table table-striped">

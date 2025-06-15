@@ -8,6 +8,8 @@ use App\Http\Controllers\Pegawai2Controller;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\SnackController;
 use App\Http\Controllers\KbController;
+use App\Http\Controllers\KaryawanController;
+use App\Http\Controllers\Karyawan2Controller;
 
 /*
 |--------------------------------------------------------------------------
@@ -101,4 +103,15 @@ Route::get('/kb', [KbController::class, 'index']);
 Route::get('/kb/tambah', [KbController::class, 'tambah']);
 Route::post('/kb/store', [KbController::class, 'store']);
 Route::get('/kb/hapus/{id}', [KbController::class, 'hapus']);
-Route::get('/kb/cari', [KbController::class, 'cari']);
+
+// CRUD latihan 2
+Route::get('/karyawan', [KaryawanController::class, 'index']);
+Route::get('/karyawan/tambah', [KaryawanController::class, 'tambah']);
+Route::post('/karyawan/store', [KaryawanController::class, 'store']);
+Route::get('/karyawan/hapus/{id}', [KaryawanController::class, 'hapus']);
+
+// CRUD latihan 2
+Route::get('/karyawan2', [Karyawan2Controller::class, 'index']);
+Route::get('/karyawan2/tambah', [Karyawan2Controller::class, 'tambah']);
+Route::post('/karyawan2/store', [Karyawan2Controller::class, 'store']);
+Route::get('/karyawan2/hapus/{id}', [Karyawan2Controller::class, 'hapus']);

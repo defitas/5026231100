@@ -6,16 +6,16 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
-class KbController extends Controller
+class KaryawanController extends Controller
 {
     //
     public function index()
 	{
     	// mengambil data dari table pegawai
-		$kb = DB::table('keranjangbelanja')->paginate(10);
+		$karyawan = DB::table('karyawan')->paginate(10);
 
     	// mengirim data pegawai ke view index
-		return view('kb',['kb' => $kb]);
+		return view('karyawan',['karyawan' => $karyawan]);
 
 	}
 
@@ -24,7 +24,7 @@ class KbController extends Controller
 	{
 
 		// memanggil view tambah
-		return view('kbtambah');
+		return view('karyawantambah');
 
 	}
 
@@ -32,13 +32,14 @@ class KbController extends Controller
 	public function store(Request $request)
 	{
 		// insert data ke table pegawai
-		DB::table('keranjangbelanja')->insert([
-			'kb_kode' => $request->kode,
-			'kb_jumlah' => $request->jumlah,
-			'kb_harga' => $request->harga,
+		DB::table('karyawan')->insert([
+			'kodepegawai' => $request->kode,
+			'namalengkap' => $request->namalengkap,
+			'divisi' => $request->divisi,
+            'departemen' => $request->departemen,
 		]);
 		// alihkan halaman ke halaman pegawai
-		return redirect('/kb');
+		return redirect('/karyawan');
 
 	}
 
@@ -46,10 +47,9 @@ class KbController extends Controller
 	public function hapus($id)
 	{
 		// menghapus data pegawai berdasarkan id yang dipilih
-		DB::table('keranjangbelanja')->where('kb_id',$id)->delete();
+		DB::table('karyawan')->where('kodepegawai',$id)->delete();
 
 		// alihkan halaman ke halaman pegawai
-		return redirect('/kb');
+		return redirect('/karyawan');
 	}
-
 }

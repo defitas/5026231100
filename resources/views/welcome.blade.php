@@ -39,6 +39,8 @@
             <li><a href="{{ url('/index') }}">ETS</a></li>
             <h3>Pertemuan 11 (routing)</h3>
             <li><a href="{{ url('/blog') }}">Blog</a></li>
+            <h3>Pertemuan 12-16</h3>
+            <li><a href="{{ url('/pegawai') }}">Latihan Tugas EAS</a></li>
         </ul>
         <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
             @if (Route::has('login'))
