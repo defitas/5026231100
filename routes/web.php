@@ -10,6 +10,7 @@ use App\Http\Controllers\SnackController;
 use App\Http\Controllers\KbController;
 use App\Http\Controllers\KaryawanController;
 use App\Http\Controllers\Karyawan2Controller;
+use App\Http\Controllers\EasController;
 
 /*
 |--------------------------------------------------------------------------
@@ -115,3 +116,9 @@ Route::get('/karyawan2', [Karyawan2Controller::class, 'index']);
 Route::get('/karyawan2/tambah', [Karyawan2Controller::class, 'tambah']);
 Route::post('/karyawan2/store', [Karyawan2Controller::class, 'store']);
 Route::get('/karyawan2/hapus/{id}', [Karyawan2Controller::class, 'hapus']);
+
+// EAS
+Route::get('/eas', [EasController::class, 'index']);
+Route::get('/eas/edit/{id}', [EasController::class, 'edit']);
+Route::post('/eas/update', [EasController::class, 'update']);
+Route::get('/eas/view/{id}', [EasController::class, 'view']);
